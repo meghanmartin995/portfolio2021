@@ -1,0 +1,44 @@
+.body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #1D1A19;
+  color: #FDF5E8;
+}
+
+.left-content {
+  padding: 72px;
+}
+
+.left-content h1 {
+  font-family: GT Sectra Display Trial;
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 80px;
+  margin: 0 0 24px 0;
+}
+
+.left-content h2 {
+  font-family: GT Sectra Fine Trial;
+  font-size: 48px;
+  line-height: 56px;
+  width: 606px;
+  margin: 0;
+}
+
+.right-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.right-content .img {
+  padding: 72px;
+}
+
+.right-content h3 {
+  font-family: Neue Haas Grotesk Text;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+  margin: 0;
+}
+
