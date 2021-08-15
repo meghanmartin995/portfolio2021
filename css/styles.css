@@ -9,8 +9,13 @@
 }
 
 .left-content {
-  padding: 72px;
+  padding: 72px 56px 0px 72px;
   width: 50vw;
+}
+
+.left-content img {
+  margin-top: -32px;
+  width: 90%;
 }
 
 .left-content h1 {
