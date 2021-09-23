@@ -1,57 +1,184 @@
+@font-face {
+    font-family: Good Sans Bold;
+    src: url(/GoodSans-Bold.woff);
+}
+
+@font-face {
+    font-family: Good Sans Regular;
+    src: url(/GoodSans-Regular.woff);
+}
+
+@font-face {
+    font-family: Neue Machina;
+    src: url(/NeueMachina-Bold.woff);
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url(/RobotoMono-Regular.woff);
+}
+
+a {
+  text-decoration: none;
+  color: #F6F5EE;
+}
+
+p {
+  margin: 0;
+  font-family: Roboto Mono;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
 .body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: #1D1A19;
-  color: #FDF5E8;
-  height: 100vh;
+  background-image: url("/noise.png");
+  /*background: #D62D20;*/
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.389583) 97.4%, rgba(0, 0, 0, 0.4) 100%);
+  background-blend-mode: soft-light, normal;
   margin: 0;
   padding: 0;
+  text-align: center;
+  color: #F6F5EE;
+  font-family: Good Sans Regular;
 }
 
-.left-content {
-  padding: 72px 56px 0px 72px;
-  width: 50vw;
+.nav a {
+  text-transform: uppercase;
+  font-family: Good Sans Bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
-.left-content img {
-  margin-top: -32px;
-  width: 90%;
+.nav {
+  max-width: 1232px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 48px;
+  margin: auto;
 }
 
-.left-content h1 {
-  font-family: GT Sectra Display Trial;
+.hero h1 {
+  font-family: Neue Machina;
   font-weight: bold;
-  font-size: 66px;
+  font-size: 68px;
   line-height: 80px;
-  margin: 0 0 24px 0;
-}
-
-.left-content h2 {
-  font-family: GT Sectra Fine Trial;
-  font-size: 48px;
-  line-height: 56px;
-  width: 606px;
+  color: rgba(246, 245, 238, 0.9);
   margin: 0;
+  padding-bottom: 24px;
 }
 
-.right-content {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+.hero-text {
+  padding: 114px 0;
 }
 
-.right-content .img {
-  padding: 72px;
+.images {
+  margin: auto;
 }
 
-.right-content h3 {
-  font-family: Neue Haas Grotesk Text;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 64px;
-  margin: 0;
+.images {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 48px;
 }
 
-.img {
-  background-repeat: no-repeat;
+img {
+  box-shadow: 0px 2.86996px 43.0494px 32px rgba(238, 186, 182, 0.24);
+  border-radius: 48px;
+  transition: all .8s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  text-transform: uppercase;
+  width: 602px;
+  margin: auto;
+  opacity: .9;
+  cursor: pointer;
+}
+
+.writing {
+  background: #020101;
+  color: #E2512C;
+  padding: 114px 0;
+}
+
+.writing h2 {
+  font-family: Neue Machina;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.articles {
+  padding-top: 48px;
+}
+
+.articles h3 {
+  padding-bottom: 24px;
+}
+
+.footer {
+  background: #020101;
+  color: #E2512C;
+  padding: 0 0 48px 0;
+}
+
+.footer p {
+  font-family: Roboto Mono;
+}
+
+.links {
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 180px;
+  align-items: center;
+  margin: auto;
+  text-transform: uppercase;
+  font-family: Good Sans Regular;
+  font-size: 14px;
+}
+.footer a {
+  color: #E2512C;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .hero {
+    padding: 80px 24px;
+    text-align: left;
+  }
+  .nav {
+    flex-direction: column;
+    text-align: left;
+    grid-gap: 32px;
+  }
+
+  .nav a {
+    font-size: 24px;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  img {
+    height: 400px;
+  }
+
 }
 
